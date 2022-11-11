@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+<header>This is a header...</header>
+<div class="center">
+    <div id="left">
+        <div id="logo_container"><img src="./thevalley.svg" alt="" id="logo"></div>
+    </div>
+    <div id="right">
+        <div id="right_text">some text</div>
+        <div id="form_container">
+        <form action="" method="post" id="myform">
+            <div class="row">
+            <label for="firstname">FIRST NAME*</label>
+                <input type="text" name="firstname" id="firstname" required>
+            
+            <label for="lastname">LAST NAME</label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+
+            <div class="row">
+            <label for="email">EMAIL*</label>
+                <input type="email" name="email" id="email" required>
+
+            <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+
+            <div class="row">
+            <label for="password">PASSWORD*</label>
+                <input type="password" name="password" id="password" class="error" required>
+            <div id="incorrect_password" class="incorrect"></div>
+
+            <label for="password-confirm">CONFIRM PASSWORD*</label>
+                <input type="password" id="password-confirm" class="error" required>
+            <div id="incorrect_confirm" class="incorrect"></div>
+            </div>
+
+            <section id="form_foot">
+                <button type="submit" id="submit_button">Create Account</button>
+                <p>Already have an account? <a href="/">Log in</a></p>
+            </section>
+        </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
